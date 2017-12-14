@@ -90,6 +90,19 @@ body {
   color: #AFAFAF;
 }
 
+.skills {
+  background-color: #fafafa;
+  height: 60vh;
+}
+
+.wrapperskills {
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  background: red;
+  margin: 0 10% 0 10%;
+}
+
 .case {
   display: flex;
   color: white;
@@ -137,7 +150,9 @@ body {
   line-height: 40px;
 }
 
-.case1 {}
+.case1 {
+  box-shadow: 0px 100px 54px 16px rgba(191, 191, 191, 1);
+}
 
 .stars {
   position: relative;
@@ -226,7 +241,6 @@ body {
 .case2 {
   /*background-color: #4CAF50;*/
   background-color: #38ac3d;
-  box-shadow: 0px 100px 54px 16px rgba(191, 191, 191, 1);
 }
 
 .case2 .case-image {
