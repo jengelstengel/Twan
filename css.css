@@ -93,14 +93,61 @@ body {
 .skills {
   background-color: #fafafa;
   height: 60vh;
+  background: linear-gradient(#fafafa 95%, rgb(20, 20, 20)120%);
 }
 
 .wrapperskills {
   display: flex;
   width: 80%;
   height: 50vh;
-  background: red;
   margin: 0 10% 0 10%;
+}
+
+.wrapperskills h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.wrapperskills ul {
+  padding: 0 0 0 32%;
+  line-height: 42px;
+  font-size: 24px;
+}
+
+.wrapperskills i {
+  margin-right: 15px;
+  width: 20px;
+  height: auto;
+}
+
+.leftskill {
+  width: 50%;
+}
+
+.leftskill::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5%;
+  width: 50%;
+  height: 90%;
+  border-right: 2px solid #AFAFAF;
+}
+
+.rightskill {
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .case {
@@ -245,12 +292,13 @@ body {
 
 .case2 .case-image {
   background-color: transparent;
+  max-width: 50vw;
 }
 
 .case2 img {
   margin-left: -45%;
-  width: auto;
-  height: 90vh;
+  width: 80vw;
+  height: auto;
   vertical-align: middle;
 }
 
