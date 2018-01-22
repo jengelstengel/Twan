@@ -45,6 +45,7 @@ body {
 .landing {
   background-color: #fafafa;
   display: flex;
+  height: 117vh;
 }
 
 .landing-image {
@@ -92,7 +93,7 @@ body {
 
 .skills {
   background-color: #fafafa;
-  height: 60vh;
+  height: 50vh;
   background: linear-gradient(#fafafa 95%, rgb(20, 20, 20)120%);
 }
 
@@ -130,7 +131,7 @@ body {
   position: absolute;
   top: 5%;
   width: 50%;
-  height: 90%;
+  height: 80%;
   border-right: 2px solid #AFAFAF;
 }
 
