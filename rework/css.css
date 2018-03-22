@@ -138,14 +138,13 @@ a {
   transform: translate(-110%, -50%);
 }
 .page {
-  min-height: 959px;
+  min-height: 100vh;
   width: 100vw;
   max-width: 100%;
 }
 .landing {
   background-color: #fafafa;
   display: flex;
-  height: 117vh;
 }
 .landing-image {
   margin-top: 136px;
@@ -157,15 +156,15 @@ a {
 .landing-text {
   margin-top: 136px;
   margin-left: 52px;
-  padding-right: 115px;
+  margin-right: 115px;
 }
 .landing-text h1 {
   margin-top: 287px;
-  font-size: 48px;
+  font-size: 75px;
   line-height: 65px;
 }
 .landing-text p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
 }
 .landing-text span {
@@ -182,45 +181,6 @@ a {
   text-align: center;
   line-height: 40px;
   color: #afafaf;
-}
-.skills {
-  background-color: #fafafa;
-  height: 50vh;
-}
-.wrapperskills {
-  display: flex;
-  width: 80%;
-  height: 50vh;
-  margin: 0 10% 0 10%;
-}
-.wrapperskills h2 {
-  text-align: center;
-  font-size: 36px;
-}
-.wrapperskills ul {
-  padding: 0 0 0 32%;
-  line-height: 42px;
-  font-size: 24px;
-}
-.wrapperskills i {
-  margin-right: 15px;
-  width: 20px;
-  height: auto;
-}
-.leftskill {
-  width: 50%;
-}
-.leftskill::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 5%;
-  width: 50%;
-  height: 80%;
-  border-right: 2px solid #afafaf;
-}
-.rightskill {
-  width: 50%;
 }
 .shadow-bar {
   width: 100%;
@@ -274,6 +234,23 @@ a {
 }
 .case-text1 {
   margin-left: 250px;
+}
+.case2 {
+  /* background-color: #4CAF50; */
+  background-color: #38ac3d;
+}
+.case2 .case-image {
+  background-color: transparent;
+  max-width: 50vw;
+}
+.case2 img {
+  margin-left: -45%;
+  width: 80vw;
+  height: auto;
+  vertical-align: middle;
+}
+.case3 {
+  background-color: #f44336;
 }
 .parallax {
   height: 100vh;
@@ -335,6 +312,68 @@ a {
 }
 .starfield span:nth-child(4) {
   transform: rotate(123deg);
+}
+@media screen and (max-width: 900px) {
+  .case2 img {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .case2 .case-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .dot-nav {
+    display: none;
+  }
+  .top-bar {
+    padding: 20px 50px 50px 35px;
+  }
+  .name {
+    margin-left: 0;
+  }
+  .links {
+    margin-right: 0;
+  }
+  .landing-image {
+    display: none;
+  }
+  .landing-text {
+    margin-right: 52px;
+  }
+  .landing-text h1 {
+    margin: 7vh 0 10px 0;
+    text-align: center;
+    font-size: 60px;
+  }
+  .landing-text p {
+    color: #474545;
+  }
+  .landing-box p {
+    color: #afafaf;
+  }
+  .landing-box {
+    margin: 40px auto 0 auto;
+  }
+  .case1 {
+    height: 110vh;
+  }
+  .case-text {
+    margin-top: 0;
+    padding-right: 52px;
+  }
+  .case-text1 {
+    margin-left: 52px;
+    width: 100%;
+    height: 100%;
+  }
+  .case-text1 h1 {
+    margin-top: 52px;
+    width: 237px;
+  }
+  .case-box {
+    margin: 40px auto 0 auto;
+  }
 }
 @keyframes starfieldRotate {
   from {
