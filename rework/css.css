@@ -75,7 +75,7 @@ a {
   display: block;
   width: 10px;
   height: 10px;
-  margin-bottom: 28px;
+  margin-bottom: 12px;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
@@ -95,14 +95,6 @@ a {
   border-radius: 50%;
   background-color: #fff;
   transition: all 0.3s;
-}
-
-.dot-nav--item:after {
-  display: block;
-  width: 3px;
-  height: 28px;
-  margin: 12px auto 0;
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .dot-nav--item:last-child:after {
@@ -273,6 +265,11 @@ a {
   background-color: #38ac3d;
 }
 
+.case-text2 {
+  padding-left: 170px;
+  margin: 15% 0 0 10%;
+}
+
 .case2 .case-image {
   background-color: transparent;
   max-width: 50vw;
@@ -283,6 +280,103 @@ a {
   width: 80vw;
   height: auto;
   vertical-align: middle;
+}
+
+.laptop {
+  margin: 300px 0 0 -300px;
+  width: 50rem;
+  position: relative;
+  transform: scale(1.5, 1.5);
+}
+
+.laptop:before {
+  background: #222;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  top: 0.7rem;
+  left: 24.5rem;
+  z-index: 1000;
+}
+
+.laptop:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 0.75rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5rem;
+}
+
+.upper {
+  width: 40rem;
+  height: 23rem;
+  background: #3d4144;
+  border: 2px solid #eaeaea;
+  border-bottom: none;
+  border-radius: 1.5rem 1.5rem 0 0;
+  margin-left: 5rem;
+  box-shadow: inset 0 0 2px 2px #222;
+  position: relative;
+}
+
+.upper:before {
+  width: 36rem;
+  height: 19rem;
+  background: #a1a1a1;
+  display: block;
+  content: "";
+  top: 2rem;
+  left: 2rem;
+  position: absolute;
+}
+
+.upper:after {
+  display: block;
+  content: "";
+  position: absolute;
+  border-bottom: 23rem solid rgba(0, 0, 0, 0.075);
+  border-right: 10rem solid transparent;
+  height: 0;
+  width: 50%;
+  border-top-left-radius: 1.5rem;
+}
+
+.lower {
+  width: 50rem;
+  height: 2rem;
+  background: #eaeaea;
+  border-radius: 2px;
+  position: relative;
+}
+
+.lower:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 0.8rem;
+  background: #a1a1a1;
+  left: 20rem;
+  top: 0;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.lower:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.75rem;
+  background: #bababa;
+  top: 2rem;
+  border-bottom-right-radius: 7.5rem 2.5rem;
+  border-bottom-left-radius: 7.5rem 2.5rem;
 }
 
 .case3 {
@@ -353,13 +447,15 @@ a {
   transform: rotate(123deg);
 }
 
-@media screen and (max-width: 900px) {
-  .case2 img {
+@media screen and (max-width: 1222px) {
+  .laptop {
     visibility: hidden;
     opacity: 0;
-  }
-  .case2 .case-image {
     display: none;
+  }
+  .case-text2 {
+    padding: 0 150px 0 0;
+    margin: 25% 0 0 150px;
   }
 }
 
@@ -409,10 +505,10 @@ a {
   .case-text {
     margin-top: 52px;
     padding-right: 52px;
+    margin-bottom: 52px;
   }
   .case-text1 {
     margin-left: 52px;
-    margin-bottom: 52px;
     width: 100%;
   }
   .case-text1 h1 {
