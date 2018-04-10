@@ -10,28 +10,25 @@ body * {
 body {
   font: 100% / 1.5 Arial;
   /*ckground: linear-gradient(135deg, #3e028c -50%, #000 100%);*/
-  background-image: linear-gradient(
-    135deg,
-    #e7627d 0%,
-    #b8235a 25%,
-    #801357 50%,
-    #3d1635 75%,
-    #1c1a27 100%
-  );
+  background-image: linear-gradient( 135deg, #e7627d 0%, #b8235a 25%, #801357 50%, #3d1635 75%, #1c1a27 100%);
 }
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 .top-bar {
   width: calc(100vw - 80px);
   background-color: transparent;
@@ -45,19 +42,24 @@ a {
   justify-content: space-between;
   z-index: 1;
 }
+
 .name {
   margin-left: 50px;
 }
+
 .top-divider {
   flex-grow: 2;
 }
+
 .links {
   display: flex;
   margin-right: 100px;
 }
+
 .links div {
   margin-left: 15px;
 }
+
 .dot-nav {
   position: fixed;
   top: 50%;
@@ -65,7 +67,9 @@ a {
   transform: translate(-50%, -50%);
   z-index: 3;
 }
+
 /* Fin Init */
+
 .dot-nav--item {
   position: relative;
   display: block;
@@ -75,10 +79,11 @@ a {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
-.dot-nav--item:before,
-.dot-nav--item:after {
+
+.dot-nav--item:before, .dot-nav--item:after {
   content: "";
 }
+
 .dot-nav--item:before {
   position: absolute;
   top: -1px;
@@ -91,16 +96,20 @@ a {
   background-color: #fff;
   transition: all 0.3s;
 }
+
 .dot-nav--item:last-child:after {
   display: none;
 }
+
 .dot-nav--item:hover {
   cursor: pointer;
 }
+
 .dot-nav--item.is-active:before {
   opacity: 1;
   transform: scale(1);
 }
+
 .dot-nav--link {
   position: absolute;
   top: 50%;
@@ -115,6 +124,7 @@ a {
   border-radius: 3px;
   transition: all 0.3s;
 }
+
 .dot-nav--link:before {
   content: "";
   position: absolute;
@@ -127,20 +137,24 @@ a {
   border-style: solid;
   transform: translateY(-50%);
 }
+
 .dot-nav--item:hover .dot-nav--link {
   visibility: visible;
   opacity: 1;
   transform: translate(-110%, -50%);
 }
+
 .page {
   min-height: 100vh;
   width: 100vw;
   max-width: 100%;
 }
+
 .landing {
   background-color: #fafafa;
   display: flex;
 }
+
 .landing-image {
   margin-top: 136px;
   margin-left: 100px;
@@ -148,26 +162,32 @@ a {
   height: 888px;
   background-color: rgb(200, 200, 200);
 }
+
 .landing-text {
   margin-top: 136px;
   margin-left: 52px;
   margin-right: 115px;
 }
+
 .landing-text h1 {
   margin-top: 287px;
   font-size: 75px;
   line-height: 65px;
 }
+
 .landing-text p {
   font-size: 18px;
   line-height: 28px;
 }
-.landing-text h1 + p {
+
+.landing-text h1+p {
   margin-top: 8px;
 }
+
 .landing-text span {
   border-bottom: 1px solid #4d4d4d;
 }
+
 .landing-box {
   margin-top: 40px;
   width: 126px;
@@ -175,22 +195,26 @@ a {
   border: 1px solid #bdbdbd;
   border-radius: 3px;
 }
+
 .landing-box p {
   text-align: center;
   line-height: 40px;
   color: #afafaf;
 }
+
 .shadow-bar {
   width: 100%;
   height: 0;
   box-shadow: 0px 6px 19px 4px rgba(1, 1, 1, 0.3);
 }
+
 .case {
   display: flex;
   color: white;
   position: relative;
   min-height: 110vh;
 }
+
 .case-image {
   margin-top: 136px;
   margin-left: 100px;
@@ -199,21 +223,25 @@ a {
   line-height: 888px;
   background-color: rgb(200, 200, 200);
 }
+
 .case-text {
   margin-top: 287px;
   margin-left: 52px;
   padding-right: 115px;
   max-width: 800px;
 }
+
 .case-text h1 {
   font-size: 48px;
   line-height: 65px;
 }
+
 .case-text p {
   margin-top: 26px;
   font-size: 16px;
   line-height: 28px;
 }
+
 .case-box {
   margin-top: 40px;
   width: 170px;
@@ -221,36 +249,44 @@ a {
   border: 1px solid white;
   border-radius: 3px;
 }
+
 .case-box p {
   margin-top: 0;
   text-align: center;
   line-height: 40px;
 }
+
 .case1 {
   overflow: hidden;
   position: relative;
 }
+
 .case-text1 {
   margin-left: 150px;
 }
+
 .case2 {
   background-color: #38ac3d;
   min-height: 110vh;
 }
+
 .case-text2 {
   padding-left: 170px;
   margin: 15% 0 0 10%;
 }
+
 .case2 .case-image {
   background-color: transparent;
   max-width: 50vw;
 }
+
 .case2 img {
   margin-left: -45%;
   width: 80vw;
   height: auto;
   vertical-align: middle;
 }
+
 .laptop {
   margin: 300px 0 0 -300px;
   width: 50rem;
@@ -258,6 +294,7 @@ a {
   transform: scale(1.5, 1.5);
   max-height: 80vh;
 }
+
 .laptop:before {
   background: #222;
   display: block;
@@ -270,6 +307,7 @@ a {
   left: 24.5rem;
   z-index: 1000;
 }
+
 .laptop:after {
   display: block;
   content: "";
@@ -280,6 +318,7 @@ a {
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   border-radius: 5rem;
 }
+
 .upper {
   width: 40rem;
   height: 23rem;
@@ -291,6 +330,7 @@ a {
   box-shadow: inset 0 0 2px 2px #222;
   position: relative;
 }
+
 .upper:before {
   width: 36rem;
   height: 19rem;
@@ -301,6 +341,7 @@ a {
   left: 2rem;
   position: absolute;
 }
+
 .upper:after {
   display: block;
   content: "";
@@ -311,6 +352,7 @@ a {
   width: 50%;
   border-top-left-radius: 1.5rem;
 }
+
 .lower {
   width: 50rem;
   height: 2rem;
@@ -318,6 +360,7 @@ a {
   border-radius: 2px;
   position: relative;
 }
+
 .lower:before {
   display: block;
   content: "";
@@ -329,6 +372,7 @@ a {
   top: 0;
   border-radius: 0 0 0.25rem 0.25rem;
 }
+
 .lower:after {
   display: block;
   content: "";
@@ -340,9 +384,11 @@ a {
   border-bottom-right-radius: 7.5rem 2.5rem;
   border-bottom-left-radius: 7.5rem 2.5rem;
 }
+
 .case3 {
   background-color: #f44336;
 }
+
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -350,6 +396,7 @@ a {
   -webkit-perspective: 1px;
   perspective: 1px;
 }
+
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -358,52 +405,54 @@ a {
   bottom: 0;
   z-index: -1;
 }
+
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
+
 .parallax__layer--back {
   -webkit-transform: translateZ(-2px) scale(3);
   transform: translateZ(-2px) scale(3);
 }
+
 .parallax__layer--back2 {
   -webkit-transform: translateZ(-6px) scale(5);
   transform: translateZ(-6px) scale(5);
 }
+
 /* add some padding to force scrollbars */
+
 .parallax__layer {
   padding: 100vh 0;
 }
-.starfield > * {
+
+.starfield>* {
   background-size: 200px 200px;
-  background-image: radial-gradient(
-      2px 2px at 40px 60px,
-      #ccc,
-      rgba(0, 0, 0, 0)
-    ),
-    radial-gradient(2px 2px at 20px 50px, #ddd, rgba(0, 0, 0, 0)),
-    radial-gradient(2px 2px at 30px 100px, #eee, rgba(0, 0, 0, 0)),
-    radial-gradient(2px 2px at 40px 60px, rgb(0, 255, 0), rgba(0, 0, 0, 0)),
-    radial-gradient(2px 2px at 110px 90px, rgb(255, 0, 0), rgba(0, 0, 0, 0)),
-    radial-gradient(2px 2px at 190px 150px, rgb(255, 200, 0), rgba(0, 0, 0, 0));
+  background-image: radial-gradient( 2px 2px at 40px 60px, #ccc, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 20px 50px, #ddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 30px 100px, #eee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 60px, rgb(0, 255, 0), rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 110px 90px, rgb(255, 0, 0), rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 190px 150px, rgb(255, 200, 0), rgba(0, 0, 0, 0));
   background-repeat: repeat;
 }
-.starfield > * {
+
+.starfield>* {
   position: absolute;
   top: 50%;
   left: 0;
   height: 100%;
   width: 100%;
 }
+
 .starfield span:nth-child(2) {
   transform: rotate(45deg);
 }
+
 .starfield span:nth-child(3) {
   transform: rotate(69deg);
 }
+
 .starfield span:nth-child(4) {
   transform: rotate(123deg);
 }
+
 @media screen and (max-width: 1222px) {
   .laptop {
     visibility: hidden;
@@ -415,6 +464,7 @@ a {
     margin: 25% 0 0 150px;
   }
 }
+
 @media screen and (max-width: 425px) {
   .dot-nav {
     display: none;
@@ -474,6 +524,7 @@ a {
     margin: 40px auto 0 auto;
   }
 }
+
 @keyframes starfieldRotate {
   from {
     transform: rotate(0deg);
@@ -482,6 +533,7 @@ a {
     transform: rotate(360deg);
   }
 }
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -490,7 +542,9 @@ a {
     opacity: 1;
   }
 }
+
 /* Firefox < 16 */
+
 @-moz-keyframes fadein {
   from {
     opacity: 0;
@@ -499,7 +553,9 @@ a {
     opacity: 1;
   }
 }
+
 /* Safari, Chrome and Opera > 12.1 */
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -508,7 +564,9 @@ a {
     opacity: 1;
   }
 }
+
 /* Internet Explorer */
+
 @-ms-keyframes fadein {
   from {
     opacity: 0;
@@ -517,7 +575,9 @@ a {
     opacity: 1;
   }
 }
+
 /* Opera < 12.1 */
+
 @-o-keyframes fadein {
   from {
     opacity: 0;
