@@ -520,6 +520,10 @@ a {
   .case-text1 h1 {
     width: 237px;
   }
+  .case-text2 {
+    margin-left: 52px;
+    width: 100%;
+  }
   .case-box {
     margin: 40px auto 0 auto;
   }
